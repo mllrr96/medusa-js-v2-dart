@@ -10,9 +10,9 @@ class AdminInventoryItemsLocationLevelsRes {
     required this.inventoryItem,
   });
 
-  InventoryItem inventoryItem;
-
   factory AdminInventoryItemsLocationLevelsRes.fromJson(Map<String, dynamic> json) => _$AdminInventoryItemsLocationLevelsResFromJson(json);
+
+  InventoryItem inventoryItem;
 
   Map<String, dynamic> toJson() => _$AdminInventoryItemsLocationLevelsResToJson(this);
 }

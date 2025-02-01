@@ -11,10 +11,10 @@ class AdminPostPriceListPricesPricesReq {
     required this.override,
   });
 
+  factory AdminPostPriceListPricesPricesReq.fromJson(Map<String, dynamic> json) => _$AdminPostPriceListPricesPricesReqFromJson(json);
+
   final List<Price> prices;
   final bool override;
-
-  factory AdminPostPriceListPricesPricesReq.fromJson(Map<String, dynamic> json) => _$AdminPostPriceListPricesPricesReqFromJson(json);
 
   Map<String, dynamic> toJson() => _$AdminPostPriceListPricesPricesReqToJson(this);
 }

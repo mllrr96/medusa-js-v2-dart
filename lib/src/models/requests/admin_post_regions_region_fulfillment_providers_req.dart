@@ -8,9 +8,9 @@ class AdminPostRegionsRegionFulfillmentProvidersReq {
     required this.providerId,
   });
 
-  final String providerId;
-
   factory AdminPostRegionsRegionFulfillmentProvidersReq.fromJson(Map<String, dynamic> json) => _$AdminPostRegionsRegionFulfillmentProvidersReqFromJson(json);
+
+  final String providerId;
 
   Map<String, dynamic> toJson() => _$AdminPostRegionsRegionFulfillmentProvidersReqToJson(this);
 }

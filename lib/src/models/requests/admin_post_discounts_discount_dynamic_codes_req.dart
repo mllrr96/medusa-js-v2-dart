@@ -10,6 +10,8 @@ class AdminPostDiscountsDiscountDynamicCodesReq {
     this.metadata,
   });
 
+  factory AdminPostDiscountsDiscountDynamicCodesReq.fromJson(Map<String, dynamic> json) => _$AdminPostDiscountsDiscountDynamicCodesReqFromJson(json);
+
   /// A unique code that will be used to redeem the Discount
   final String code;
 
@@ -18,8 +20,6 @@ class AdminPostDiscountsDiscountDynamicCodesReq {
 
   /// An optional set of key-value pairs to hold additional information.
   final Map<String, dynamic>? metadata;
-
-  factory AdminPostDiscountsDiscountDynamicCodesReq.fromJson(Map<String, dynamic> json) => _$AdminPostDiscountsDiscountDynamicCodesReqFromJson(json);
 
   Map<String, dynamic> toJson() => _$AdminPostDiscountsDiscountDynamicCodesReqToJson(this);
 }

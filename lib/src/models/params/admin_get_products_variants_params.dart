@@ -20,6 +20,8 @@ class AdminGetProductsVariantsParams {
     this.updatedAt,
   });
 
+  factory AdminGetProductsVariantsParams.fromJson(Map<String, dynamic> json) => _$AdminGetProductsVariantsParamsFromJson(json);
+
   String? id;
   String? fields;
   String? expand;
@@ -31,8 +33,6 @@ class AdminGetProductsVariantsParams {
   bool? allowBackorder;
   DateFilter? createdAt;
   DateFilter? updatedAt;
-
-  factory AdminGetProductsVariantsParams.fromJson(Map<String, dynamic> json) => _$AdminGetProductsVariantsParamsFromJson(json);
 
   Map<String, dynamic> toJson() => _$AdminGetProductsVariantsParamsToJson(this);
 }

@@ -21,7 +21,7 @@ class DiscountRulePayload {
 
   final String? description;
 
-  final DicountRuleType type;
+  final DiscountRuleType type;
 
   final int value;
 

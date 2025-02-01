@@ -10,11 +10,11 @@ class AdminPostOrdersOrderSwapsSwapFulfillmentsReq {
     required this.locationId,
   });
 
+  factory AdminPostOrdersOrderSwapsSwapFulfillmentsReq.fromJson(Map<String, dynamic> json) => _$AdminPostOrdersOrderSwapsSwapFulfillmentsReqFromJson(json);
+
   Map<String, dynamic>? metadata;
   bool noNotification;
   String locationId;
-
-  factory AdminPostOrdersOrderSwapsSwapFulfillmentsReq.fromJson(Map<String, dynamic> json) => _$AdminPostOrdersOrderSwapsSwapFulfillmentsReqFromJson(json);
 
   Map<String, dynamic> toJson() => _$AdminPostOrdersOrderSwapsSwapFulfillmentsReqToJson(this);
 }

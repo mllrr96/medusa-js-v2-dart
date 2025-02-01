@@ -8,7 +8,7 @@ class AdminGetCustomerGroupsParams {
     required this.q,
     required this.offset,
     required this.order,
-    required this.discount_conditionId,
+    required this.discountConditionId,
     required this.id,
     required this.name,
     required this.createdAt,
@@ -25,7 +25,7 @@ class AdminGetCustomerGroupsParams {
   String q;
   int offset;
   String order;
-  String discount_conditionId;
+  String discountConditionId;
   String id;
   String name;
   Map<String, String> createdAt;

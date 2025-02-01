@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
 
 @JsonEnum(fieldRename: FieldRename.snake)
-enum DicountRuleType {
+enum DiscountRuleType {
   fixed,
   percentage,
   freeShipping,

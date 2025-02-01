@@ -6,9 +6,9 @@ part 'generated/store_post_carts_cart_payment_session_req.g.dart';
 class StorePostCartsCartPaymentSessionReq {
   StorePostCartsCartPaymentSessionReq({required this.providerId});
 
-  final String providerId;
-
   factory StorePostCartsCartPaymentSessionReq.fromJson(Map<String, dynamic> json) => _$StorePostCartsCartPaymentSessionReqFromJson(json);
+
+  final String providerId;
 
   Map<String, dynamic> toJson() => _$StorePostCartsCartPaymentSessionReqToJson(this);
 }

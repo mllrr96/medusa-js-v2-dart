@@ -6,9 +6,9 @@ part 'generated/admin_delete_tax_rates_tax_rate_shipping_options_req.g.dart';
 class AdminDeleteTaxRatesTaxRateShippingOptionsReq {
   AdminDeleteTaxRatesTaxRateShippingOptionsReq({required this.shippingOptions});
 
-  List<String> shippingOptions;
-
   factory AdminDeleteTaxRatesTaxRateShippingOptionsReq.fromJson(Map<String, dynamic> json) => _$AdminDeleteTaxRatesTaxRateShippingOptionsReqFromJson(json);
+
+  List<String> shippingOptions;
 
   Map<String, dynamic> toJson() => _$AdminDeleteTaxRatesTaxRateShippingOptionsReqToJson(this);
 }

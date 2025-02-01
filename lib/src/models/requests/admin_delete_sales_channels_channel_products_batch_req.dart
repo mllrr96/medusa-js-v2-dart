@@ -6,9 +6,9 @@ part 'generated/admin_delete_sales_channels_channel_products_batch_req.g.dart';
 class AdminDeleteSalesChannelsChannelProductsBatchReq {
   AdminDeleteSalesChannelsChannelProductsBatchReq({required this.productIds});
 
-  List<String> productIds;
-
   factory AdminDeleteSalesChannelsChannelProductsBatchReq.fromJson(Map<String, dynamic> json) => _$AdminDeleteSalesChannelsChannelProductsBatchReqFromJson(json);
+
+  List<String> productIds;
 
   Map<String, dynamic> toJson() => _$AdminDeleteSalesChannelsChannelProductsBatchReqToJson(this);
 }

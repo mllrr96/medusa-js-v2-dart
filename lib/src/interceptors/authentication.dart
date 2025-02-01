@@ -50,9 +50,9 @@ class AuthenticationInterceptor extends Interceptor {
       final String? cookie =
           response.headers.map[HttpHeaders.setCookieHeader]?.first;
 
-      final String? cookieToken = cookie?.split(';').first;
+      final String? cookieToken = cookie?.split(';').firstOrNull;
 
-      final String? token = cookieToken?.split('=').last;
+      final String? token = cookieToken?.split('=').lastOrNull;
 
       if (token != null) {
         medusa.setCookieToken(token);

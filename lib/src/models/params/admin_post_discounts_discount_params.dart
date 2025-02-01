@@ -9,10 +9,10 @@ class AdminPostDiscountsDiscountParams {
     required this.fields,
   });
 
+  factory AdminPostDiscountsDiscountParams.fromJson(Map<String, dynamic> json) => _$AdminPostDiscountsDiscountParamsFromJson(json);
+
   String expand;
   String fields;
-
-  factory AdminPostDiscountsDiscountParams.fromJson(Map<String, dynamic> json) => _$AdminPostDiscountsDiscountParamsFromJson(json);
 
   Map<String, dynamic> toJson() => _$AdminPostDiscountsDiscountParamsToJson(this);
 }

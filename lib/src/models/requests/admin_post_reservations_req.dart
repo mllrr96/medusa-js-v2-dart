@@ -5,9 +5,9 @@ part 'generated/admin_post_reservations_req.g.dart';
 @JsonSerializable()
 class AdminPostReservationsReq {
   AdminPostReservationsReq({
-    required this.line_itemId,
+    required this.lineItemId,
     required this.locationId,
-    required this.inventory_itemId,
+    required this.inventoryItemId,
     required this.quantity,
     required this.description,
     this.metadata,
@@ -17,9 +17,9 @@ class AdminPostReservationsReq {
 
   Map<String, dynamic> toJson() => _$AdminPostReservationsReqToJson(this);
 
-  final String line_itemId;
+  final String lineItemId;
   final String locationId;
-  final String inventory_itemId;
+  final String inventoryItemId;
   final int quantity;
   final String description;
   final Map<String, dynamic>? metadata;
